@@ -32,7 +32,7 @@ foreach ($numeri as $elemento => $value) {
 
 //traccia 3
 
-$numeri = 101;
+/*$numeri = 101;
 
 for ($i = 0; $i < $numeri; $i++) {
     if ($i % 3 == 0) {
@@ -45,5 +45,19 @@ for ($i = 0; $i < $numeri; $i++) {
         echo "($i)\n";
     }
     
+}*/
+
+//traccia 4
+
+$temperatura =[20, 10, 7, 29, 32, 2, 12, 18];
+
+foreach ($temperatura as $key => $value) {
+    if ($value>=15 && $value<25) {
+        echo "Fa caldo\n";
+    }elseif ($value>25){
+        echo "Fa molto caldo\n";
+    }else{
+        echo "Fa molto freddo\n";
+    }
 }
 ?>
