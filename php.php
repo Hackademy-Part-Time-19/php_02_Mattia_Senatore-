@@ -49,7 +49,7 @@ for ($i = 0; $i < $numeri; $i++) {
 
 //traccia 4
 
-$temperatura =[20, 10, 7, 29, 32, 2, 12, 18];
+/*$temperatura =[20, 10, 7, 29, 32, 2, 12, 18];
 
 foreach ($temperatura as $key => $value) {
     if ($value>=15 && $value<25) {
@@ -59,5 +59,49 @@ foreach ($temperatura as $key => $value) {
     }else{
         echo "Fa molto freddo\n";
     }
+}*/
+
+
+//traccia 5
+
+
+
+/*$temperatura =[
+'Venezia' => 16,
+'Bari' => 32,
+'Roma' => 16,
+'Napoli' => 30,
+'Milano' => 13,
+'Palermo' => 14,
+'Torino' => 24,
+'Lecce' => 27,
+'Genova' => 30,
+'Catania' => 11,
+'Cosenza' => 9,];
+
+foreach ($temperatura as $key => $value) {
+    if ($value>=15 && $value<25) {
+        echo "A ($key) fa caldo con ($value)°C\n";
+    }elseif ($value>25){
+        echo "A ($key) fa molto caldo con ($value)°C\n";
+    }else{
+        echo "A ($key) fa freddo con ($value)°C\n";
+    }
+}*/
+
+//traccia 6
+
+$tombola = [[],[],[],[]];
+
+foreach ($tombola as &$sottoarray) {
+    for ($i = 0; $i < 5; $i++) {
+        $numeroCasuale = rand(1, 100);
+        $sottoarray[] = $numeroCasuale;
+    }
 }
+
+
+var_dump($tombola);
+
+
 ?>
